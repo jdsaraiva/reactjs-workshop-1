@@ -1,0 +1,23 @@
+
+<!-- 1) HTML renders the input each time, this way the user can not insert any value -->
+<!-- Run the code directly on your browser -->
+
+<div id="counter"> </div>
+
+<script>
+
+    const render = () => {
+
+        document.getElementById('counter').innerHTML = `
+            <div>
+              Hello HTML
+              <input />
+              <pre>${(new Date).toLocaleTimeString()}</pre>
+            </div>
+          `;
+
+    };
+
+    setInterval(render, 1000);
+
+</script>
